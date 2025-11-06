@@ -576,7 +576,7 @@ _items = [
                 }
             }
             spec = {
-                managementPolicies = _defaults.managementPolicies
+                managementPolicies = ["Create", "Observe", "Update"]
                 forProvider = {
                     wait = True
                     chart = {

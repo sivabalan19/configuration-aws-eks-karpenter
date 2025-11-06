@@ -168,7 +168,7 @@ _helmResources = {
         generateName = "configuration-aws-eks-karpenter-"
     }
     spec = {
-        managementPolicies = ["*"]
+        managementPolicies = ["Create", "Observe", "Update"]
         forProvider = {
             wait = True
             chart = {

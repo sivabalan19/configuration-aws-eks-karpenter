@@ -4,12 +4,12 @@ import models.io.upbound.platform.aws.v1alpha1 as platformawsv1alpha1
 
 _items = [
     metav1alpha1.E2ETest{
-        metadata.name: "e2e-test-xkarpenter"
+        metadata.name: "e2e-test-karpenter"
         spec= {
             crossplane.autoUpgrade.channel: "Rapid"
             defaultConditions: ["Ready"]
             manifests: [
-                platformawsv1alpha1.XKarpenter{
+                platformawsv1alpha1.Karpenter{
                     metadata = {
                         name = "configuration-aws-eks-karpenter"
                     }
